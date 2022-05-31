@@ -1,0 +1,14 @@
+api:
+  giphy:
+    tag:
+      higher: rich
+      equal: nothing
+      lower: broke
+    url: https://api.giphy.com
+    token: JrpMZUPYoAbrLTHqHoAe9YNALGsWFMzZ
+    path: /v1/gifs/random?api_key=${api.giphy.token}&tag={tag}
+  open-exchange-rates:
+    base: RUB
+    token: 8eedf092fda34441a8a774dd1c447677
+    url: https://openexchangerates.org/api
+    path: /historical/{date}.json?app_id=${api.openexchangerates.token}&symbols=${api.openexchangerates.base}%2C{currency}
